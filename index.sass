@@ -1,0 +1,34 @@
+$maxSmall:"(max-width:991px)"
+@mixin maxSmall
+    @media #{$maxSmall}
+        @content
+.header
+   margin: 10px 30px
+   @include maxSmall
+      margin: 30px
+     
+.game 
+ display: grid
+ grid-template-columns: repeat(auto-fill,minmax(300px,1fr))
+ gap: 30px
+ @include maxSmall
+      grid-template-columns: repeat(auto-fill, minmax(101px, 1fr))
+      gap: 6px
+      /* width: 100%; */
+      margin-top: 70px
+ 
+ div
+    cursor: pointer
+    //  display: flex
+    //  align-items: center
+    //  justify-content: center
+    width: 80%
+    font-weight: bold
+    color: white
+    font-size: 83px
+    text-align: center
+    height: 130px
+    margin: auto
+    background: red
+    @include maxSmall
+      margin-bottom: 72px

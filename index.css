@@ -1,0 +1,40 @@
+.header {
+  margin: 10px 30px;
+}
+@media (max-width:991px) {
+  .header {
+    margin: 30px;
+  }
+}
+
+.game {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+@media (max-width:991px) {
+  .game {
+    grid-template-columns: repeat(auto-fill, minmax(101px, 1fr));
+    gap: 6px;
+    /* width: 100%; */
+    margin-top: 70px;
+  }
+}
+.game div {
+  cursor: pointer;
+  width: 80%;
+  font-weight: bold;
+  color: white;
+  font-size: 83px;
+  text-align: center;
+  height: 130px;
+  margin: auto;
+  background: red;
+}
+@media (max-width:991px) {
+  .game div {
+    margin-bottom: 72px;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
